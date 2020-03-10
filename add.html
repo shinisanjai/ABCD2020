@@ -33,11 +33,15 @@
 
                             <td>
 
-                                <button class = "btn btn-success" onclick="addnum()" >
+                                <button type ="button" class = "btn btn-success" onclick="addnum()" >
                                     Add
                                 </button>
                             </td>
                             
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><p id="result" ></p></td>
                         </tr>
                     </select>
                 </table>
@@ -53,6 +57,7 @@
             var y=parseInt(document.getElementById("num2").value);
          var z= x+y;
          console.log(z);
+         document.getElementById("result").innerHTML=z;
         }
 
     </script>
