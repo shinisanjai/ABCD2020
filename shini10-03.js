@@ -1,4 +1,4 @@
-var x=121;
+var x=12321;
 var y=x;
 var rev=0;
 var rem=0;
@@ -10,6 +10,6 @@ x=parseInt(x/10);
 }
 console.log(rev);
 if (y==rev)
-{console.log("numer is palintdrom");}
+{console.log("numer is panlindrome");}
 else
-{console.log("number is not a palintdrom");}
+{console.log("number is not a panlindrome");}
