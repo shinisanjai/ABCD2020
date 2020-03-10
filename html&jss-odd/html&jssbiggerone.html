@@ -19,14 +19,14 @@
                             </td>
                             <td><input type="text" id="num1"></td>
                         </tr>
-                       <!-- <tr>
+                        <tr>
                             <td>
                                 number2
                             </td>
                             <td>
                                 <input type="text" id="num2">
                             </td>
-                        </tr>-->
+                        </tr>
                         <tr>
                             <td>
                             </td>
@@ -34,7 +34,7 @@
                             <td>
 
                                 <button type ="button" class = "btn btn-success" onclick="addnum()" >
-                                    Add
+                                    Result
                                 </button>
                             </td>
                             
@@ -54,17 +54,18 @@
         function addnum()
         {
             var x=parseInt(document.getElementById("num1").value);
-           // var y=parseInt(document.getElementById("num2").value);
-         if (x%2==0)
+           var y=parseInt(document.getElementById("num2").value);
+         if (num1>=num2)
          {
-            document.getElementById("result").innerHTML="number is even";
+             var z=num1;
+         console.log(z);
          }
          else
          {
-            document.getElementById("result").innerHTML="Number is Odd";
-             
+             var z=num2;
+             console.log(z)
          }
-        
+         document.getElementById("result").innerHTML=z;
         }
 
     </script>
